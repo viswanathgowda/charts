@@ -1,0 +1,21 @@
+<div>
+  <div style="display: block; height: 500px; width: 500px; position: relative; left:400px;">
+    <form [formGroup]="contactform" (change)="submit()" style="position: relative; left:-400px;">
+
+      <p>
+
+        <select formControlName="chart">
+          <option [ngValue]="null" disabled>Select Chart Type</option>
+          <option *ngFor="let chart of charts" [ngValue]="chart.name">{{chart.name}}</option>
+        </select>
+
+
+      </p>
+
+    </form>
+
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+      [legend]="barChartLegend" [type]="barChartType" (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>
