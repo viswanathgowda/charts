@@ -41,7 +41,7 @@ export class AppComponent {
       this.barChartLabels.forEach(label => {
        this.barChartData[0].data.push(this.datalist[label]['volumeSales']);
        this.barChartData[1].data.push(this.datalist[label]['valueSales']);
-       console.log(data);
+      //  console.log(data);
       });
     });;
 
@@ -50,14 +50,14 @@ export class AppComponent {
     });
   }
   public chartClicked(e:any):void {
-    console.log(e);
+    // console.log(e);
     }
     
     public chartHovered(e:any):void {
-    console.log(e);
+    // console.log(e);
     }
     submit(){
-      console.log(this.contactform.value);
+      // console.log(this.contactform.value);
       this.barChartType= this.contactform.value.chart;
     }
 }

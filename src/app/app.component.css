@@ -1,4 +1,15 @@
-
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form{
+    text-align: center;
+}
+.canvas{
+    width: 25vw;
+}
 
 @media (max-width: 480px) {
     .main{
