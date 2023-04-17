@@ -1,0 +1,12 @@
+
+
+@media (max-width: 480px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .form{
+        text-align: center;
+    }
+}
