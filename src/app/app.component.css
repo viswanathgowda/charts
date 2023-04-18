@@ -8,7 +8,7 @@
     text-align: center;
 }
 .canvas{
-    width: 25vw;
+    width: 40vw;
 }
 
 @media (max-width: 480px) {
@@ -19,5 +19,8 @@
     }
     .form{
         text-align: center;
+    }
+    .canvas{
+        width: 90vw;
     }
 }
